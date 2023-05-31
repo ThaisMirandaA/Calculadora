@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="caixa">
+            <h1 class="titulo-principal">Calculadora</h1>
+            <img  class="logo" src="calculadora.png" alt="Imagem da calculadora">
+        </div>
+    </header>
+
+    <main>
+        <div class="cal-box">
+                <div class="cal-box-cont">
+                    <div class="leitor">
+                        <output class="escrita-numeros" type="text" id="numeros-leitor">
+                        </output>
+                    </div>
+                    <div class="botoes">
+                        <button type="button" class="botao-teclado" onclick="insert(1)" id="botao-1">1</button>
+                        <button type="button" class="botao-teclado" onclick="insert(2)"id="botao-2">2</button>
+                        <button type="button" class="botao-teclado" onclick="insert(3)"id="botao-3">3</button>
+                        <button type="button" class="botao-teclado" onclick="insert(4)"id="botao-4">4</button>
+                        <button type="button" class="botao-teclado" onclick="insert(5)"id="botao-5">5</button>
+                        <button type="button" class="botao-teclado" onclick="insert(6)"id="botao-6">6</button>
+                        <button type="button" class="botao-teclado" onclick="insert(7)"id="botao-7">7</button>
+                        <button type="button" class="botao-teclado" onclick="insert(8)"id="botao-8">8</button>
+                        <button type="button" class="botao-teclado" onclick="insert(9)"id="botao-9">9</button>
+                        <button type="button" class="botao-teclado" onclick="insert(0)"id="botao-0">0</button>
+                        <button type="button" class="botao-teclado" onclick="insert('+')"id="botao-soma">+</button>
+                        <button type="button" class="botao-teclado" onclick="insert('-')"id="botao-subtracao">-</button>
+                        <button type="button" class="botao-teclado" onclick="insert('*')"id="botao-multiplicacao">*</button>
+                        <button type="button" class="botao-teclado" onclick="insert('/')"id="botao-divisao">/</button>
+                        <button type="button" class="botao-teclado" onclick="insert('.')"id="botao-ponto">.</button>
+                        <button type="button" class="botao-teclado"  onclick="calcular()" id="botao-enter">=</button>
+                        <button type="button" class="botao-teclado" onclick="clean()"id="botao-limpar-1">C</button>
+                        <button type="button" class="botao-teclado" onclick="back()"id="botao-limpar"><</button>
+                    </div>
+                    
+                <div>
+        </div>
+
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
+
