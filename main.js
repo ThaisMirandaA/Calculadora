@@ -1,20 +1,21 @@
+// A parte comentada abaixo foi usada para rodar a calculadora no console do navegador antes do HTML ser feito: 
 // let operacao = "";
 //     let numero1 = "";
 //     let numero2 = ""; 
 //     let pergunta = "sim";
-    
+
 //     function soma (numero1, numero2) {
 //         return numero1 + numero2; 
 //     }
-    
+
 //     function subtrai (numero1, numero2) {
 //         return numero1 - numero2;
 //     }
-    
+
 //     function multiplica (numero1, numero2) {
 //         return numero1 * numero2;
 //     }
-    
+
 //     function divide (numero1, numero2) {
 //         return numero1 / numero2;  
 //     }
@@ -24,7 +25,7 @@
 //             alert ('Por favor, digite apenas números.');
 //         }   
 //     }
-    
+
 //         while (pergunta != "não") {
 //             pergunta = prompt ('Deseja realizar uma operação matemática? Responda "sim" ou "não".'); 
 //                 if (pergunta === "sim") {
@@ -48,42 +49,41 @@
 //                     } else {
 //                         alert ('Operação inválida.');
 //                     } 
-    
+
 //                     } else if (pergunta === "não") {
 //                         break; 
 //                     } else {
 //                         alert('Por favor, responda com "sim" ou "não".'); 
 //                     } 
-            
+
 //         }
 
-function insert (num) {
+function insert(num) {
     var numero = document.getElementById('numeros-leitor').innerHTML;
-    document.getElementById('numeros-leitor').innerHTML = numero + num; 
+    document.getElementById('numeros-leitor').innerHTML = numero + num;
 }
 
 function clean() {
-    document.getElementById('numeros-leitor').innerHTML = ""; 
+    document.getElementById('numeros-leitor').innerHTML = "";
 }
 
 function back() {
     var numeroFinal = document.getElementById('numeros-leitor').innerHTML;
-    document.getElementById('numeros-leitor').innerHTML = numeroFinal.substring(0, numeroFinal.length -1);
+    document.getElementById('numeros-leitor').innerHTML = numeroFinal.substring(0, numeroFinal.length - 1);
 }
 
 
-function calcular () {
+function calcular() {
     var resultado = document.getElementById('numeros-leitor').innerHTML;
     if (resultado) {
-        document.getElementById('numeros-leitor').innerHTML = eval(resultado); 
+        document.getElementById('numeros-leitor').innerHTML = eval(resultado);
     } else {
         document.getElementById('numeros-leitors').innerHTML = "";
     }
-   
-}   
+}
 
 function clearScreen() {
     screen.innerText = "";
     numero = "";
-  }
+}
 
